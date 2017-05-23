@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/blur"
+        android:checkable="true"
+        android:title="Blurring" />
+    <item
+        android:id="@+id/col"
+        android:checkable="true"
+        android:title="Coloring" />
+    <item
+        android:id="@+id/pwb"
+        android:checkable="true"
+        android:title="Pen Width Big" />
+    <item android:title="Pen Color Red"
+        android:id="@+id/red"/>
+    <item android:title="Pen Color Blue"
+        android:id="@+id/blue"/>
+</menu>
