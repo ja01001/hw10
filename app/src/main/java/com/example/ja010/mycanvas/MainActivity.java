@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                 mc.clear();
                 break;
             case R.id.b2:
+                Toast.makeText(this,""+getFilesDir(),Toast.LENGTH_SHORT).show();
                 mc.load(getFilesDir()+"example.jpg");
                 break;
             case R.id.b3:
