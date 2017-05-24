@@ -15,18 +15,14 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
-
-import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.FileReader;
 import java.io.IOException;
 
 /**
  * Created by ja010 on 17-05-18.
  */
-
 public class mycanvas extends View {
     Bitmap mBitmap;
     Canvas mCanvas;
