@@ -9,6 +9,10 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.nio.Buffer;
+
 public class MainActivity extends AppCompatActivity {
     mycanvas mc;
     CheckBox cb;
@@ -75,15 +79,16 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
     public void clcl(View v){
         switch (v.getId()){
             case R.id.b1:
                 mc.clear();
                 break;
             case R.id.b2:
+                mc.load(getFilesDir()+"example.jpg");
                 break;
             case R.id.b3:
+                mc.save(getFilesDir()+"example.jpg");
                 break;
             case R.id.b4:
                 mc.rotate(cb.isChecked());
